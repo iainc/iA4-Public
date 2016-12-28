@@ -1,0 +1,25 @@
+a {
+  color: $color__type;
+
+  &:visited {
+    color: $color__type;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color__type;
+  }
+}
+.widget a {
+  color: $color__type;
+  text-decoration: none;
+}
+a.more-link {
+  display: inline-block;
+}
+h1 a,
+h1 a:visited,
+h1 a:hover {
+  color: $color__type;
+  text-decoration: none !important;
+}

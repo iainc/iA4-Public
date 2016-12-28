@@ -1,0 +1,27 @@
+.widget {
+  h2:first-child,
+  p:first-child,
+  ul:first-child,
+  ol:first-child {
+    margin-top: 0;
+  }
+  ul {
+    margin-left: 1em;
+  }
+  // Use the full width when there is no title
+  .col.small:only-child {
+    width: 100%;
+  }
+  // Exception for the search field
+  &.widget_search {
+    .col.small:only-child {
+      text-align: center;
+      form {
+        display: inline-block;
+        input[type="search"] {
+          -webkit-appearance: textfield;
+        }
+      }
+    }
+  }
+}

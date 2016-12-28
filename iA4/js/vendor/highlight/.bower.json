@@ -1,0 +1,13 @@
+{
+  "name": "highlight",
+  "homepage": "https://github.com/tankchintan/highlight-js",
+  "_release": "df54a5e5fe",
+  "_resolution": {
+   "type": "branch",
+   "branch": "master",
+   "commit": "df54a5e5fe260492f50863dff6d15661d93b9be6"
+  },
+  "_source": "git@github.com:tankchintan/highlight-js.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:tankchintan/highlight-js.git"
+}

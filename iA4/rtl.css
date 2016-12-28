@@ -1,0 +1,8 @@
+/*
+Theme Name: iA4
+*/
+
+body {
+  direction: rtl;
+  unicode-bidi: embed;
+}
