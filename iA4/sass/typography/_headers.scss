@@ -1,0 +1,106 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:$font__serif;
+  font-size:$font-size__base;
+  margin:0;
+  
+  @media #{$mobile-large} {
+    font-size:$font-size__small;
+  }
+}
+h1 {
+  font-weight: 700;
+  text-align:center;
+  letter-spacing:  1.5px;
+  margin:0 0 $line-height__base 0;
+  text-transform: uppercase;
+  
+  @media #{$mobile-large} {
+    letter-spacing:  1px;
+    margin:0 0 $line-height__small 0;
+  }
+  @media #{$mobile-small} {
+    margin:0 0 $line-height__small--stoneage 0;
+  }
+  
+  &.site-title {
+    font-size:$font-size__small;
+    line-height:$line-height__small;
+    font-weight: 400;
+    clear:both;
+    text-align:left;
+    letter-spacing:0;
+    margin:0;
+    text-transform:none;
+    
+    @media #{$mobile-small} {
+      line-height:$line-height__small--stoneage;
+    }
+    
+    a {
+      font-size:$font-size__small;
+      line-height:$line-height__small;
+    }
+  }
+  &.blog-title {
+    margin:0;
+  }
+}
+h1 + h2 {
+  margin:-$line-height__base 0 $line-height__base 0;
+  
+  @media #{$mobile-large} {
+    margin:-$line-height__small 0 $line-height__small 0;
+  }
+  @media #{$mobile-small} {
+    margin:-$line-height__small--stoneage 0 $line-height__small--stoneage 0;
+  }
+}
+h2 {
+  font-weight: 700;
+  margin:0;
+  text-align: center;
+  margin:0 0 $line-height__base 0;
+  
+  @media #{$mobile-large} {
+    margin:0 0 $line-height__small 0;
+  }
+  @media #{$mobile-small} {
+    margin:0 0 $line-height__small--stoneage 0;
+  }
+  &.blog-title {
+    margin:0;
+    text-align:left;
+  }
+  &.portfolio-title {
+    margin-top:-$line-height__base;
+    margin-left:-$font-size__base;
+    max-width:800px;
+    
+    @media #{$mobile-large} {
+      margin-top:-$line-height__small;
+      margin-left:-$font-size__small;
+    }
+    @media #{$mobile-small} {
+      margin-top:-$line-height__small--stoneage;
+    }
+  }
+}
+h3 {
+  font-weight: 700;
+}
+h4 {
+  font-weight: 700;
+  font-style:italic;
+}
+h5 {
+  font-weight:400;
+  font-style:italic;
+}
+h6 {
+  font-weight:400;
+}

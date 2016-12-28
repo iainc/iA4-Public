@@ -1,0 +1,118 @@
+/*!
+Theme Name: iA4
+Theme URI: http://store.ia.net/
+Author: iA, Inc.
+Author URI: http://ia.net/
+Description: Beautiful typography and reduced to essence. It is time to let your content shine with iA4.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: iA4
+Tags: white, one-column, responsive-layout, custom-header, custom-menu, featured-image-header, theme-options, translation-ready, flexible-header
+
+This theme is licensed under the GPL, and is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Reset
+2.0 - Typography
+3.0 - Elements
+4.0 - Forms
+5.0 - Navigation
+  5.1 - Links
+  5.2 - Menus
+6.0 - Accessibility
+7.0 - Alignments
+8.0 - Clearings
+9.0 - Widgets
+10.0 - Content
+  10.1 - Posts and pages
+  10.2 - Asides
+  10.3 - Comments
+11.0 - Infinite scroll
+12.0 - Media
+  12.1 - Captions
+  12.2 - Galleries
+
+
+
+--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+.visuallyhidden {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+1.0 - Reset
+--------------------------------------------------------------*/
+@import "reset";
+
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+
+/*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+/*--------------------------------------------------------------
+4.0 Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+
+/*--------------------------------------------------------------
+5.0 Navigation
+--------------------------------------------------------------*/
+@import "navigation/navigation";
+
+/*--------------------------------------------------------------
+6.0 Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+7.0 Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+8.0 Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
+
+/*--------------------------------------------------------------
+9.0 Widgets
+--------------------------------------------------------------*/
+@import "site/secondary/widgets";
+
+/*--------------------------------------------------------------
+10.0 Content
+--------------------------------------------------------------*/
+@import "site/site";
+
+/*--------------------------------------------------------------
+12.0 Media
+--------------------------------------------------------------*/
+@import "media/media";
+
+/*--------------------------------------------------------------
+13.0 Layout
+--------------------------------------------------------------*/
+@import "layout/layout";
+
+/*--------------------------------------------------------------
+14.0 Animations
+--------------------------------------------------------------*/
+@import "animations/animations.scss";
+
+/*--------------------------------------------------------------
+15.0 Printing
+--------------------------------------------------------------*/
+@import "modules/print";

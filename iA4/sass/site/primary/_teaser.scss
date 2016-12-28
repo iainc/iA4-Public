@@ -1,0 +1,38 @@
+.teaser {
+  a {
+    text-decoration: none;
+  }
+}
+.next-teaser {
+  position: relative;
+  margin:0 0 $line-height__base 0;
+
+   @media #{$mobile-large} {
+     margin:0 0 $line-height__small 0;
+   }
+   @media #{$mobile-small} {
+     margin:0 0 $line-height__small--stoneage 0;
+   }
+  .load-next-modal {
+    @include vendor(transition, opacity 0.2s ease-in-out);
+
+    &:hover .load-next-modal__bottom {
+      opacity: 1;
+    }
+    .col,
+    .cols,
+    .center {
+      height: 100%;
+    }
+    .col {
+      position: relative;
+    }
+  }
+  .read-more {
+    display: none;
+  }
+  .mood__info {
+    @include vendor(transition, opacity 0.1s ease-in-out);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,152 @@
+textarea {
+  font-family: $font__serif;
+  overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+  padding-left: 3px;
+  @include vendor(appearance, none);
+  vertical-align: top; /* Improves readability and alignment in all browsers */
+  width: 100%;
+}
+label {
+  font-family: $font__serif;
+  display:inline-block;
+  width:100%;
+  font-weight: 400;
+
+  &.grunion-field-label {
+    font-family: $font__serif;
+
+    span {
+      font-family: $font__serif;
+      font-weight: inherit;
+      color:$color__type;
+      margin: 0;
+      &:before {
+        content: "";
+      }
+    }
+  }
+}
+
+input,
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="email"],
+textarea {
+  background:transparent;
+  font-family: $font__serif;
+  display:inline-block;
+  width:100%;
+  max-width:100%;
+  margin-bottom:0;
+  @include vendor(border-radius, 3px);
+  @include vendor(appearance, none);
+  border: 1px solid $color__type;
+  padding: ($line-height__base / 4) ($line-height__base / 2);
+  line-height: $line-height__base;
+  outline: none;
+  font-weight:inherit;
+
+  @media #{$mobile-large} {
+    padding: ($line-height__small / 4) ($line-height__small / 2);
+  }
+  @media #{$mobile-small} {
+    padding: ($line-height__small--stoneage / 4) ($line-height__small--stoneage / 2);
+  }
+
+}
+input[type="submit"] {
+  background:$color__type;
+  font-family: $font__serif;
+  @include vendor(appearance, none);
+  @include vendor(border-radius, 0);
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display:inline-block;
+
+  &:hover {
+    background-color: $color__type--hover
+  }
+}
+textarea {
+  font-family: $font__serif;
+  @include vendor(appearance, none);
+  @include vendor(transition, height 0.2s ease-in-out);
+  max-width: 100%;
+  width: 100%;
+  height:5 * $line-height__base;
+
+  @media #{$mobile-large} {
+    height:5 * $line-height__small;
+  }
+  @media #{$mobile-small} {
+    height:5 * $line-height__small--stoneage;
+  }
+
+}
+.form-error {
+  h3 {
+    font-family: $font__serif;
+    color:$color__type;
+  }
+  .form-errors .form-error-message {
+    list-style-type: none;
+    font-family: $font__serif;
+    font-style: italic;
+    color:$color__type;
+  }
+}
+.contact-form {
+  float:left;
+  width:100%;
+
+  input[type="submit"] {
+    @include vendor(border-radius, 0 0 0 0);
+    float: left;
+
+    &:hover {
+      background-color: $color__type--hover;
+    }
+  }
+
+  > div {
+    font-family: $font__serif;
+    margin-bottom:-13px;
+    float:left;
+    width:100%;
+    border-radius:3px;
+
+    &:first-child {
+      input,
+      input[type="text"],
+      input[type="tel"],
+      input[type="number"],
+      input[type="email"],
+      textarea {
+        @include vendor(border-radius, 0 0 0 0);
+      }
+    }
+
+    input,
+    input[type="text"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="email"],
+    textarea {
+      border:none;
+      border-left:1px solid $color__type;
+      border-right:1px solid $color__type;
+      border-top:1px solid $color__type;
+      @include vendor(border-radius, 0 0 0 0);
+      min-width: 100%;
+    }
+  }
+}
+div#contact-form-17 {
+  font-family: $font__serif;
+  blockquote {
+    padding-left: 0;
+  }
+}

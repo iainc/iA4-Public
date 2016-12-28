@@ -1,0 +1,265 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: iA4\n"
+"POT-Creation-Date: 2015-11-10 16:26+0100\n"
+"PO-Revision-Date: 2015-11-10 16:26+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:14
+msgid "Page Not Found"
+msgstr ""
+
+#: 404.php:17
+msgid ""
+"Sorry, something went wrong here. Let us take you <a href=\"/\">home</a> or "
+"you can search for what you are looking for."
+msgstr ""
+
+#: archive-jetpack-portfolio.php:28
+msgid "Portfolio"
+msgstr ""
+
+#: archive.php:30 index.php:17
+msgid "News"
+msgstr ""
+
+#: comments.php:32
+msgid "Leave a comment"
+msgstr ""
+
+#: footer.php:14
+msgid "Get in Touch"
+msgstr ""
+
+#: footer.php:16
+msgid "Your contact message."
+msgstr ""
+
+#: functions.php:48
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:49
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:207
+msgctxt "Merriweather font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:270
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: header.php:34
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:53 header.php:62
+msgid "Menu"
+msgstr ""
+
+#: header.php:83 header.php:96
+msgid "Search"
+msgstr ""
+
+#: inc/customizer.php:40
+msgid "Logo only header?"
+msgstr ""
+
+#: inc/customizer.php:42
+msgid "Makes the menu disappear from the header and centers the logo."
+msgstr ""
+
+#: inc/customizer.php:55
+msgid "Texts"
+msgstr ""
+
+#: inc/customizer.php:56
+msgid "Static texts used in various locations throughout the theme"
+msgstr ""
+
+#: inc/customizer.php:76
+msgid "News Headline"
+msgstr ""
+
+#: inc/customizer.php:77
+msgid "Title used for the news section on home"
+msgstr ""
+
+#: inc/customizer.php:98
+msgid "Portfolio Headline"
+msgstr ""
+
+#: inc/customizer.php:99
+msgid "Title used for the portfolio section on a page"
+msgstr ""
+
+#: inc/customizer.php:113
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer.php:114
+msgid "Information to display in the footer"
+msgstr ""
+
+#: inc/customizer.php:133
+msgid "Display Footer?"
+msgstr ""
+
+#: inc/customizer.php:134
+msgid "Should we display the headline and message defined below on every page?"
+msgstr ""
+
+#: inc/customizer.php:154
+msgid "Center footer menu?"
+msgstr ""
+
+#: inc/customizer.php:155
+msgid ""
+"Should we center the footer menu (you can define it under \"Appearance/Menus"
+"\")?"
+msgstr ""
+
+#: inc/customizer.php:176
+msgid "Footer Headline"
+msgstr ""
+
+#: inc/customizer.php:189
+msgid ""
+"Use this text to catch visitors at the end of the page. Tell them to get in "
+"touch with you. etc. HTML allowed."
+msgstr ""
+
+#: inc/customizer.php:197
+msgid "Footer Message"
+msgstr ""
+
+#: inc/extras.php:68
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: inc/featured-image.php:22
+msgid "Expanded image"
+msgstr ""
+
+#: inc/featured-image.php:24
+msgid "Overview pages"
+msgstr ""
+
+#: inc/featured-image.php:25
+msgid "Single pages"
+msgstr ""
+
+#: inc/tagline.php:25
+msgid "Tagline"
+msgstr ""
+
+#: inc/template-tags.php:20
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/template-tags.php:25
+msgid "Older posts"
+msgstr ""
+
+#: inc/template-tags.php:32
+msgid "Newer posts"
+msgstr ""
+
+#: inc/template-tags.php:58
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:62
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
+msgstr ""
+
+#: inc/template-tags.php:63
+msgctxt "Next post link"
+msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: inc/template-tags.php:79
+#, php-format
+msgid "By %s on %s — %s read"
+msgstr ""
+
+#: search.php:39
+msgid "No results. Try searching for something else."
+msgstr ""
+
+#: template-parts/content-none.php:11
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:17
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:21
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:26
+msgid ""
+"We can&rsquo;t find what you&rsquo;re looking for. Perhaps searching will "
+"help?"
+msgstr ""
+
+#: template-parts/content-single.php:52
+msgid "Posted in: "
+msgstr ""
+
+#: template-parts/content-single.php:66
+msgid "Tags: "
+msgstr ""
+
+#: template-parts/content.php:42
+msgid "More"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "iA4"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://store.ia.net/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "An ultra-minimalist WordPress Theme by iA."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "iA, Inc."
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://ia.net/"
+msgstr ""

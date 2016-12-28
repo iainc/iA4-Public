@@ -1,0 +1,20 @@
+@page {
+  margin:1cm;
+}
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    background-color:white;
+    color: black;
+  }
+  /*Resetting Fancy Link Underlines*/
+  footer a, .navigation li:hover a, .navigation li.current-menu-item a, .entry-content a, p a {
+    text-decoration:underline;
+  }
+  .portfolio-section, .front-page-posts, img, ul {
+    page-break-inside: avoid;
+  }
+  .work-examples {
+    page-break-before: avoid;
+  }
+}
