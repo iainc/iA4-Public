@@ -2,31 +2,35 @@ ul,
 ol {
   margin: 0 0 $line-height__base 0;
 }
+
 ul {
   list-style: disc;
-
-  ul, ol {
+  ul,
+  ol {
     margin: 0 0 0 $line-height__base;
-
-    ul, ol {
-      margin: 0 0 0 (2 *$line-height__base);
+    ul,
+    ol {
+      margin: 0 0 0 (2 * $line-height__base);
     }
   }
 }
+
 ol {
   list-style: decimal;
-
-  ul, ol {
+  ul,
+  ol {
     margin: 0 0 0 $line-height__base;
-
-    ul, ol {
-      margin: 0 0 0 (2 *$line-height__base);
+    ul,
+    ol {
+      margin: 0 0 0 (2 * $line-height__base);
     }
   }
 }
+
 dt {
   font-weight: bold;
 }
+
 dd {
   margin: 0 0 $line-height__base 0;
 }

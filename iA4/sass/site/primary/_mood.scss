@@ -1,20 +1,20 @@
 /* mood / hero module */
+
 .mood {
   max-width: 1024px;
   display: block;
   position: relative;
   overflow: hidden;
   width: 100%;
-  margin:0 0 (2 * $line-height__base) 0;
-
+  margin: 0 0 (2 * $line-height__base) 0;
   @media #{$mobile-large} {
-    margin:0 0 (2 * $line-height__small) 0;
+    margin: 0 0 (2 * $line-height__small) 0;
   }
   @media #{$mobile-small} {
-    margin:0 0 (2 * $line-height__small--stoneage) 0;
+    margin: 0 0 (2 * $line-height__small--stoneage) 0;
   }
   a {
-    display:inline-block;
+    display: inline-block;
   }
   img {
     width: 100%;
@@ -35,15 +35,13 @@
     margin-right: auto;
   }
   &.mood--work {
-    margin:0 0 $line-height__base 0;
-
+    margin: 0 0 $line-height__base 0;
     @media #{$mobile-large} {
-      margin:0 0 $line-height__small 0;
+      margin: 0 0 $line-height__small 0;
     }
     @media #{$mobile-small} {
-      margin:0 0 $line-height__small--stoneage 0;
+      margin: 0 0 $line-height__small--stoneage 0;
     }
-
   }
   .mood__info {
     position: absolute;
@@ -51,7 +49,6 @@
     width: 100%;
     bottom: $line-height__base;
     left: 0px;
-
     @media #{$mobile-large} {
       bottom: $line-height__small;
     }
@@ -62,63 +59,57 @@
 }
 
 /* replaces mood on front page */
+
 .front {
   & .mood.mood--big {
     max-height: 900px;
     margin-bottom: 0px;
   }
-
   & figcaption {
     text-align: right;
     font-style: italic;
     text-decoration: none;
     font-size: 14px;
-    margin:0 0 (2 * $line-height__base) 0;
-
+    margin: 0 0 (2 * $line-height__base) 0;
     a {
       text-decoration: none;
       font-size: 14px;
     }
-
     @media #{$tablet} {
       padding: 0 $line-height__small;
       margin: 0 0 (2 * $line-height__small) 0;
       text-align: center;
     }
-
     @media #{$mobile-medium} {
       text-align: center;
     }
-
     @media #{$mobile-small} {
-      margin:0 0 (2 * $line-height__small--stoneage) 0;
+      margin: 0 0 (2 * $line-height__small--stoneage) 0;
       text-align: center;
     }
   }
-  ul.tiles{
+  ul.tiles {
     overflow: hidden;
-
     li.tile {
       margin-bottom: 0;
-
       @media #{$tablet} {
-        width: calc((100% - 27.2px)/2);
+        width: calc((100% - 27.2px) / 2);
       }
       @media #{$mobile-medium} {
         width: 100%;
-        margin-top:$line-height__small;
+        margin-top: $line-height__small;
       }
       @media #{$mobile-small} {
         width: 100%;
-        margin-top:$line-height__small--stoneage;
+        margin-top: $line-height__small--stoneage;
       }
       &:first-of-type {
         @media #{$mobile-medium} {
-          margin-top:0;
+          margin-top: 0;
         }
       }
     }
-    li.tile-small:last-child{
+    li.tile-small:last-child {
       @media #{$tablet} {
         display: none;
       }
@@ -128,13 +119,13 @@
     }
     @media #{$tablet} {
       padding: 0 $line-height__small;
-      margin-right:0;
+      margin-right: 0;
       li.tile-small:nth-last-child(2) {
         margin-right: 0px;
       }
     }
   }
-  ul.tags{
+  ul.tags {
     margin-bottom: 0px;
   }
 }

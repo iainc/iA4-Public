@@ -100,4 +100,3 @@ function ia4_display_featured_image_single()
 
     return $display ? $display[0] == 'true' : true;
 }
-

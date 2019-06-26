@@ -11,9 +11,9 @@
 if (!function_exists('ia4_paging_nav')) :
 function ia4_paging_nav()
 {
-        // Don't print empty markup if there's only one page.
+    // Don't print empty markup if there's only one page.
     if ($GLOBALS['wp_query']->max_num_pages < 2) {
-            return;
+        return;
     } ?>
     <nav class="navigation paging-navigation" role="navigation">
         <h1 class="screen-reader-text">
@@ -24,8 +24,7 @@ function ia4_paging_nav()
             <div class="nav-previous">
                 <?php next_posts_link(__('Older posts', 'ia4')); ?>
             </div>
-            <?php endif;
-        ?>
+            <?php endif; ?>
 
         <?php if (get_previous_posts_link()) : ?>
             <div class="nav-next">
@@ -45,14 +44,13 @@ endif;
 if (!function_exists('ia4_post_nav')) :
 function ia4_post_nav()
 {
-        // Don't print empty markup if there's nowhere to navigate.
+    // Don't print empty markup if there's nowhere to navigate.
     $previous = (is_attachment()) ? get_post(get_post()->post_parent) : get_adjacent_post(false, '', true);
     $next = get_adjacent_post(false, '', false);
 
     if (!$next && !$previous) {
         return;
-    }
-        ?>
+    } ?>
     <nav class="navigation post-navigation" role="navigation">
         <h1 class="screen-reader-text">
             <?php _e('Post navigation', 'ia4'); ?>
@@ -60,12 +58,10 @@ function ia4_post_nav()
         <div class="nav-links">
             <?php
                 previous_post_link('<div class="nav-previous">%link</div>', _x('<span class="meta-nav">&larr;</span>&nbsp;%title', 'Previous post link', 'ia4'));
-                next_post_link('<div class="nav-next">%link</div>', _x('%title&nbsp;<span class="meta-nav">&rarr;</span>', 'Next post link', 'ia4'));
-            ?>
+    next_post_link('<div class="nav-next">%link</div>', _x('%title&nbsp;<span class="meta-nav">&rarr;</span>', 'Next post link', 'ia4')); ?>
         </div><!-- .nav-links -->
     </nav><!-- .navigation -->
     <?php
-
 }
 endif;
 
@@ -102,18 +98,22 @@ function ia4_get_the_reading_time()
 }
 
 /**
- * Returns true if the user defined a primary menu that is not empty or if 
+ * Returns true if the user defined a primary menu that is not empty or if
  * no primary menu is defined (fallback to page menu)
  */
-function ia4_display_header_menu() 
+function ia4_display_header_menu()
 {
-    if(get_theme_mod('ia4_center_logo', false)) return false;
+    if (get_theme_mod('ia4_center_logo', false)) {
+        return false;
+    }
     
     $display_header_menu = true;
     if (has_nav_menu('primary')) {
-         $menu = wp_nav_menu(array('echo' => false, 'theme_location' => 'primary', 'depth' => 1, 'menu_id' => 'main-menu', 'items_wrap' => '%3$s', 'container' => '')); 
-         // if an empty primary header menu is defined
-         if($menu == '') $display_header_menu = false;
+        $menu = wp_nav_menu(array('echo' => false, 'theme_location' => 'primary', 'depth' => 1, 'menu_id' => 'main-menu', 'items_wrap' => '%3$s', 'container' => ''));
+        // if an empty primary header menu is defined
+        if ($menu == '') {
+            $display_header_menu = false;
+        }
     }
     return $display_header_menu;
 }
@@ -149,8 +149,7 @@ function ia4_the_custom_fields()
     if (($fields)): ?>
         <dl class="meta">
             <?php foreach ($fields as $field => $value):
-                $is_link = strpos($value, 'http') !== false;
-            ?>
+                $is_link = strpos($value, 'http') !== false; ?>
                 <div class="custom-field">
                     <?php if ($is_link): ?>
                         <dt>

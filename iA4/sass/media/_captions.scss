@@ -3,26 +3,26 @@
   color: $color__type;
   font-style: italic;
   text-align: left;
-
   @media #{$mobile-large} {
     float: none;
   }
 }
+
 .alignleft {
   @extend .wp-caption-text;
   float: left;
   padding-right: 10px;
-  
   @media #{$mobile-medium} {
     padding-right: 0px;
   }
 }
+
 .alignright {
   @extend .wp-caption-text;
-  float:right;
-}
-.aligncenter {
-  @extend .wp-caption-text;
-  float:none;
+  float: right;
 }
 
+.aligncenter {
+  @extend .wp-caption-text;
+  float: none;
+}

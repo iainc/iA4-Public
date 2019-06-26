@@ -24,7 +24,7 @@
                     <img src="<?php echo ia4_get_the_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
                 </figure>
             <?php endif; ?>
-            
+
             <h2 class="blog-title">
                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             </h2>
@@ -36,7 +36,7 @@
                 </a>
             <?php endif; ?>
             <a href="<?php the_permalink(); ?>">
-                <?php 
+                <?php
                 $excerpt = get_the_excerpt();
                 echo $excerpt?$excerpt:'<p></p>';
                 echo '&nbsp;<span class="more__text">' . __('More', 'ia4') . '</span>';

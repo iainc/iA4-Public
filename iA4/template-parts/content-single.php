@@ -23,7 +23,9 @@
         <?php endif; ?>
         <section>
             <div class="col">
-                <h1 class="blog-title <?php if (has_post_thumbnail() && ia4_display_featured_image_single()) echo 'blog-title-mfix'; ?>">
+                <h1 class="blog-title <?php if (has_post_thumbnail() && ia4_display_featured_image_single()) {
+    echo 'blog-title-mfix';
+} ?>">
                     <?php the_title(); ?>
                 </h1>
                 <p class="meta meta--blog detail">
@@ -35,7 +37,7 @@
             <div class="col">
                 <div class="entry-content post-content" id="post-content">
                     <?php the_content(); ?>
-                    
+
                     <?php $categories_arg = array(
                         'exclude' => get_option('default_category'),
                         'depth' => -1,
@@ -49,13 +51,15 @@
                                     <?php foreach ($categories as $cat) : ?>
                                         <?php $category = get_category($cat); ?>
                                         <?php if ($cat == $categories[0]) {
-                                            echo _e('Posted in: ', 'ia4');
-                                        }?>
+                            echo _e('Posted in: ', 'ia4');
+                        }?>
                                         <span class="cat-item">
                                             <a href="<?php echo get_category_link($category->term_id);?>"><!--
                                                 --><?php echo $category->name;?><!--
                                              --></a><!--
-                                            --><?php if ($cat != end($categories)) echo ', '; ?>
+                                            --><?php if ($cat != end($categories)) {
+                            echo ', ';
+                        } ?>
                                         </span>
                                     <?php endforeach; ?>
                                 </div>
@@ -74,9 +78,11 @@
         </section><!-- section -->
         <section>
             <div class="col">
-                <?php if (comments_open() || get_comments_number()) comments_template(); ?>
+                <?php if (comments_open() || get_comments_number()) {
+                            comments_template();
+                        } ?>
             </div>
         </section><!-- section -->
-    
+
     </article><!-- #post-## -->
 </div>

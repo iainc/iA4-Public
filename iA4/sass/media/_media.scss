@@ -5,12 +5,12 @@
   margin-bottom: 0;
   margin-top: 0;
   padding: 0;
-
 }
+
 .page-content,
 .entry-content,
 .comment-content {
-  .attachment  {
+  .attachment {
     a {
       img {
         margin-right: auto;
@@ -21,26 +21,30 @@
     }
   }
 }
+
 /* Make sure embeds and iframes fit their containers */
+
 embed,
 iframe,
 object {
   max-width: 100%;
-  margin-bottom:$line-height__base;
-
+  margin-bottom: $line-height__base;
   @media #{$mobile-large} {
-    margin-bottom:$line-height__small;
+    margin-bottom: $line-height__small;
   }
   @media #{$mobile-small} {
-    margin-bottom:$line-height__small--stoneage;
+    margin-bottom: $line-height__small--stoneage;
   }
 }
+
 /*--------------------------------------------------------------
 12.1 Captions
 --------------------------------------------------------------*/
+
 @import "captions";
 
 /*--------------------------------------------------------------
 12.2 Galleries
 --------------------------------------------------------------*/
+
 @import "galleries";

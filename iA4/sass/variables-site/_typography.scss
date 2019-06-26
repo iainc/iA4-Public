@@ -1,17 +1,14 @@
-$font__serif:                              "Merriweather", "Georgia", serif;
-$font__monospace:                          "Courier", monospace;
-
-$font-size__base:                          19px;
-$font-size__base__fake-small-caps:         14px;
-$font-size__small:                         16px;
-$font-size__small__fake-small-caps:        12px;
-
-$font-weight__light:                       300;
-$font-weight__regular:                     400;
-$font-weight__bold:                        900;
-
-$line-height__base:                        round($font-size__base * 1.7);
-$line-height__base__fake-small-caps:       round($font-size__base * 1.7);
-$line-height__small:                       round($font-size__small * 1.55);
-$line-height__small__fake-small-caps:      round($font-size__small * 1.55);
-$line-height__small--stoneage:             round($font-size__small * 1.55);
+$font__serif: "Merriweather", "Georgia", serif;
+$font__monospace: "Courier", monospace;
+$font-size__base: 19px;
+$font-size__base__fake-small-caps: 14px;
+$font-size__small: 16px;
+$font-size__small__fake-small-caps: 12px;
+$font-weight__light: 300;
+$font-weight__regular: 400;
+$font-weight__bold: 900;
+$line-height__base: round($font-size__base * 1.7);
+$line-height__base__fake-small-caps: round($font-size__base * 1.7);
+$line-height__small: round($font-size__small * 1.55);
+$line-height__small__fake-small-caps: round($font-size__small * 1.55);
+$line-height__small--stoneage: round($font-size__small * 1.55);

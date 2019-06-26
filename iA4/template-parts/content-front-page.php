@@ -20,9 +20,11 @@
                 <img src="<?php echo ia4_get_the_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
             </figure>
         <?php endif; ?>
-        
+
         <div class="col">
-            <h1 class="entry-title <?php if (has_post_thumbnail()) echo 'blog-title-mfix'; ?>">
+            <h1 class="entry-title <?php if (has_post_thumbnail()) {
+    echo 'blog-title-mfix';
+} ?>">
                 <?php the_title(); ?>
             </h1>
         </div>

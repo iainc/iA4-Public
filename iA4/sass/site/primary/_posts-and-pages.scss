@@ -1,26 +1,33 @@
 .sticky {
   display: block;
 }
+
 .hentry {
 }
+
 .byline,
 .updated:not(.published) {
   display: none;
 }
+
 .single .byline,
 .group-blog .byline {
   display: inline;
 }
+
 .page-links {
   clear: both;
 }
+
 .home .col.small h2 {
   margin-bottom: 0px;
 }
+
 .single .post-content > p:first-child {
   margin-top: 0;
   text-align: left;
 }
+
 .jetpack-portfolio .entry-content p:first-child {
   margin-top: 0;
 }

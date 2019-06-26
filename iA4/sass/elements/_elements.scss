@@ -1,27 +1,29 @@
 @import "lists";
 @import "tables";
-
 hr {
   background-color: $color__type;
   border: 0;
   height: 1px;
 }
-img {
-  height: auto; /* Make sure images are scaled correctly. */
-  max-width: 100%; /* Adhere to container width. */
 
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
   @media #{$mobile-small} {
     float: none;
   }
 }
-.content, .post-content {
+
+.content,
+.post-content {
   figure {
     line-height: 0;
     padding: 0;
     margin-bottom: $line-height__base;
     display: block;
     text-align: center;
-
     @media #{$mobile-large} {
       margin-bottom: $line-height__small;
     }
@@ -51,24 +53,24 @@ img {
       display: none;
     }
   }
-  > a > img, > img {
+  > a > img,
+  > img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: $line-height__base;
   }
 }
+
 .more {
   color: inherit;
-  
   &--click {
     display: inline;
     @media #{$mobile-large} {
       display: none;
     }
   }
-  
-  &--touch{
+  &--touch {
     display: none;
     @media #{$mobile-large} {
       display: inline;
@@ -78,20 +80,18 @@ img {
     @extend .fake-small-caps;
     color: inherit;
     text-decoration: underline;
-    
   }
 }
 
 article ol {
   list-style: decimal outside;
-
   @media #{$mobile-large} {
     list-style: decimal inside;
   }
 }
+
 article ul {
   list-style: disc outside;
-
   @media #{$mobile-large} {
     list-style: disc inside;
   }

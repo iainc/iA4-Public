@@ -49,7 +49,7 @@
                                         <span class="header-title-text"><?php bloginfo('name'); ?></span>
                                         <span class="header-description-text"><?php bloginfo('description'); ?></span>
                                     </a><!-- end header-text-->
-                                    <?php if(ia4_display_header_menu()) : ?>
+                                    <?php if (ia4_display_header_menu()) : ?>
                                         <div class="mobile-menu mobile-menu--has-logo js-action" data-action="toggleMenu"><?php _e('Menu', 'ia4'); ?></div>
                                     <?php endif; ?>
                                 </div><!--end logo-->
@@ -58,25 +58,27 @@
                                     <span class="header-title-text"><?php bloginfo('name'); ?></span><!-- end header-text-logo-->
                                     <span class="header-description-text"><?php bloginfo('description'); ?></span><!-- header-description -->
                                 </a><!-- end header-text-->
-                                <?php if(ia4_display_header_menu()) : ?>
+                                <?php if (ia4_display_header_menu()) : ?>
                                     <div class="mobile-menu js-action" data-action="toggleMenu"><?php _e('Menu', 'ia4'); ?></div>
                                 <?php endif; ?>
-                            <?php endif; // End header image check. ?>
+                            <?php endif; // End header image check.?>
                         </div><!--end header-bg-->
                     </div><!--end col small-->
-                    <?php if(ia4_display_header_menu()) : ?>
+                    <?php if (ia4_display_header_menu()) : ?>
                     <div class="col large table-cell">
                         <div class="navigation original">
                             <div class="menu-wrapper">
                                 <nav id="site-navigation" class="main-navigation">
                                     <div class="main-menu-wrapper">
                                         <div class="search-field">
-                                            <input type="text" name="searchterm" value="<?php if (isset($_GET['s'])) echo $_GET['s']; ?>" class="js-search" id="searchterm" aria-label="Search Terms" autocomplete="off">
+                                            <input type="text" name="searchterm" value="<?php if (isset($_GET['s'])) {
+    echo $_GET['s'];
+} ?>" class="js-search" id="searchterm" aria-label="Search Terms" autocomplete="off">
                                             <a data-action="toggleSearch" class="js-action-toggleSearch search-x" href="#">×</a>
                                         </div><!--end search-field-->
 
                                         <?php if (has_nav_menu('primary')): ?>
-                                            <?php 
+                                            <?php
                                             $menu = wp_nav_menu(array('echo' => false, 'theme_location' => 'primary', 'depth' => 1, 'menu_id' => 'main-menu', 'items_wrap' => '%3$s', 'container' => '')); ?>
                                             <ul id="main-menu" class="menu">
                                                 <?php echo $menu; ?>
@@ -84,7 +86,7 @@
                                             </ul>
                                         <?php else: ?>
                                             <ul id="main-menu" class="menu">
-                                            	<?php 
+                                            	<?php
                                                     $menu = wp_page_menu(array('theme_location' => 'primary', 'depth' => 1, 'menu_id' => 'main-menu', 'echo' => '0'));
                                                     // whip the page menu into wp_nav_menu form
                                                     $menu = str_replace('<ul>', '', $menu);
@@ -103,7 +105,7 @@
                     </div><!--end col large-->
                     <?php endif; ?>
                 </div><!--end logo-and-navigation-->
-              <?php else: // Header without navigation etc. ?>
+              <?php else: // Header without navigation etc.?>
                 <div class="logo-no-navigation">
                   <?php if (get_header_image()) : ?>
                     <a href="<?php echo esc_url(home_url('/')); ?>" rel="home" aria-label="Home">

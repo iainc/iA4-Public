@@ -4,47 +4,53 @@
   -moz-box-sizing: $box-model; // Firefox <= 19
   box-sizing: $box-model;
 }
+
 // Border radius
 @mixin border-radius($radius) {
-  background-clip: padding-box; /* stops bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
   -webkit-border-radius: $radius;
   border-radius: $radius;
 }
+
 // Center block
 @mixin center-block {
   display: block;
   margin: 0 auto;
 }
+
 // Clearfix
 @mixin clearfix {
   content: "";
   display: table;
 }
+
 // Center after (not all clearfix need this also)
 @mixin clearfix-after {
   clear: both;
 }
+
 /**
  * Create vendor-prefixed CSS in one go
  *
   `@include vendor(border-radius, 4px);`
  *
  */
-@mixin vendor($property, $value, $modifier:""){
-  @if $modifier == true {
-  -webkit-#{$property}: -webkit-#{$value};
-    -moz-#{$property}: -moz-#{$value};
-     -ms-#{$property}: -ms-#{$value};
-      -o-#{$property}: -o-#{$value};
-        #{$property}: #{$value};
-  }
 
-  @if $modifier == "" {
-  -webkit-#{$property}: $value;
+@mixin vendor($property, $value, $modifier: "") {
+  @if $modifier==true {
+    -webkit-#{$property}: -webkit-#{$value};
+    -moz-#{$property}: -moz-#{$value};
+    -ms-#{$property}: -ms-#{$value};
+    -o-#{$property}: -o-#{$value};
+    #{$property}: #{$value};
+  }
+  @if $modifier== "" {
+    -webkit-#{$property}: $value;
     -moz-#{$property}: $value;
-     -ms-#{$property}: $value;
-      -o-#{$property}: $value;
-        #{$property}: $value;
+    -ms-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}: $value;
   }
 }
 
@@ -54,7 +60,8 @@
 
 @mixin link-underline($thickness) {
   background-image: linear-gradient(to bottom, $color__type, $color__type);
-  text-shadow:-1px -1px 0 $color__background, 1px -1px 0 $color__background, -1px 1px 0 $color__background, 1px 1px 0 $color__background;
+  text-shadow: -1px -1px 0 $color__background, 1px -1px 0 $color__background,
+    -1px 1px 0 $color__background, 1px 1px 0 $color__background;
   background-repeat: repeat-x;
   background-size: $thickness $thickness;
   background-position: 0 90%;

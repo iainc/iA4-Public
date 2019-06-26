@@ -37,7 +37,7 @@ function ia4_customize_section($wp_customize)
     $wp_customize->add_control(
         'ia4_center_logo',
         array(
-            'label' => __('Logo only header?', 'ia4'),            
+            'label' => __('Logo only header?', 'ia4'),
             'priority' => 1,
             'description' => __('Makes the menu disappear from the header and centers the logo.', 'ia4'),
             'section' => 'header_image',
@@ -215,7 +215,7 @@ add_action('customize_register', 'ia4_customize_section');
 function ia4_sanitize_boolean($value)
 {
     if (!is_bool($value)) {
-            return false;
+        return false;
     }
 
     return $value;
@@ -227,7 +227,7 @@ function ia4_sanitize_boolean($value)
 function ia4_sanitize_text($value)
 {
     if (!is_string($value)) {
-            return '';
+        return '';
     }
 
     return $value;

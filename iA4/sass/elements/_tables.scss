@@ -16,32 +16,36 @@ table {
         display: none;
       }
     }
-    th, td {
+    th,
+    td {
       font-size: $font-size__small;
       line-height: $line-height__small;
-      border-top:1px solid $color__type;
-      border-left:1px solid $color__type;
-      padding:6px;
+      border-top: 1px solid $color__type;
+      border-left: 1px solid $color__type;
+      padding: 6px;
       &:last-child {
-        border-right:1px solid $color__type;
+        border-right: 1px solid $color__type;
       }
     }
   }
   tr:last-child {
-    th, td {
-      border-bottom:1px solid $color__type;
+    th,
+    td {
+      border-bottom: 1px solid $color__type;
     }
   }
   // tfoot exception
   tfoot tr:last-child {
-    th, td {
-      border-top:none;
+    th,
+    td {
+      border-top: none;
     }
   }
   // thead exception
   thead tr:last-child {
-    th, td {
-      border-bottom:none;
+    th,
+    td {
+      border-bottom: none;
     }
   }
 }

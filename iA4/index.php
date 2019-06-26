@@ -25,11 +25,11 @@ get_header(); ?>
 
             <?php if (have_posts()) : ?>
                 <section id="posts">
-                    <?php 
+                    <?php
                         while (have_posts()) {
-                            the_post(); 
-                            get_template_part('template-parts/content', get_post_format()); 
-                        } 
+                            the_post();
+                            get_template_part('template-parts/content', get_post_format());
+                        }
                     ?>
                 </section><!-- #posts -->
                 <section section id="posts_naviation">

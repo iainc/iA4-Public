@@ -4,21 +4,24 @@
   margin: 0;
   overflow: hidden;
 }
+
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
-  font-style:italic;
+  font-style: italic;
 }
+
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
 .post-navigation .nav-next {
   float: right;
   text-align: right;
   width: 50%;
-  font-style:italic;
+  font-style: italic;
 }
+
 .site-main .paging-navigation {
   margin-bottom: $line-height__base;
 }

@@ -1,24 +1,24 @@
 * {
-  font-size:100%;
+  font-size: 100%;
   color: $color__type;
-  font-size:$font-size__base;
-  font-weight:$font-weight__regular;
-  font-family:$font__serif;
-  line-height:$line-height__base;
-  margin:0;
-  padding:0;
-
+  font-size: $font-size__base;
+  font-weight: $font-weight__regular;
+  font-family: $font__serif;
+  line-height: $line-height__base;
+  margin: 0;
+  padding: 0;
   @media #{$mobile-large} {
-    font-size:$font-size__small;
-    line-height:$line-height__small;
+    font-size: $font-size__small;
+    line-height: $line-height__small;
   }
   @media #{$mobile-small} {
-    font-size:$font-size__small;
-    line-height:$line-height__small--stoneage;
+    font-size: $font-size__small;
+    line-height: $line-height__small--stoneage;
   }
 }
+
 body {
-  background:$color__background;
+  background: $color__background;
 }
 
 @import "headers";

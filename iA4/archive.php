@@ -9,18 +9,19 @@ get_header(); ?>
 
 <section id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-        <?php 
+        <?php
         $is_page = false;
-        if(is_page()) {
+        if (is_page()) {
             $is_page = true;
             while (have_posts()) {
-                the_post(); 
-                get_template_part('template-parts/content', 'page'); 
+                the_post();
+                get_template_part('template-parts/content', 'page');
             }
             global $paged;
-            if(!$paged)
-                $paged = get_query_var( 'page', 1 ); //'tis a bug
-            query_posts('posts_per_page='.get_option( 'posts_per_page' ).'&paged='.$paged);
+            if (!$paged) {
+                $paged = get_query_var('page', 1);
+            } //'tis a bug
+            query_posts('posts_per_page='.get_option('posts_per_page').'&paged='.$paged);
         }
         ?>        
         <div class="center">
@@ -34,12 +35,12 @@ get_header(); ?>
                     <?php the_archive_title(); ?>
                     </h1>
                 <?php endif; ?>
-                <?php 
+                <?php
                     while (have_posts()) {
                         the_post();
-                        get_template_part('template-parts/content', get_post_format()); 
+                        get_template_part('template-parts/content', get_post_format());
                     }
-                    ia4_paging_nav(); 
+                    ia4_paging_nav();
                 ?>
             <?php else : ?>
                 <?php get_template_part('template-parts/content', 'none'); ?>

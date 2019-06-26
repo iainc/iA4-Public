@@ -10,7 +10,7 @@
  */
 function ia4_tagline_metabox_callback($post)
 {
-        // get current value
+    // get current value
     $value = get_post_meta($post->ID, '_ia4_tagline', true);
     wp_nonce_field('ia4_tagline_metabox', 'ia4_tagline_metabox_nonce', true, true); ?>
     <textarea name="ia4_tagline" id="ia4_tagline" cols="60" rows="2" tabindex="30" style="width: 97%;"><?php echo esc_html($value); ?></textarea>

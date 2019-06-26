@@ -19,17 +19,17 @@
             $searchAll = new WP_Query("s=$s&showposts=0");
             $foundPosts = $searchAll->found_posts;
             if ($foundPosts <= 1) {
-                    echo $foundPosts.' result found';
+                echo $foundPosts.' result found';
             } else {
-                    echo $foundPosts.' results found';
+                echo $foundPosts.' results found';
             }
             ?>
         </h1>
-        <?php 
+        <?php
             while (have_posts()) {
-                the_post(); 
+                the_post();
                 get_template_part('template-parts/content', get_post_format());
-            } 
+            }
             ia4_paging_nav();
         ?>
     <?php else : ?>

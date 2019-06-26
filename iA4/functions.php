@@ -262,16 +262,16 @@ function add_textarea()
         $user = wp_get_current_user();
         $user_identity = $user->exists() ? $user->display_name : '';
 
-        echo 
+        echo
             get_avatar(get_current_user_id(), 32).
             '<p class="logged-in-as">'.
             sprintf(
-            __(
-                'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>'
+                __(
+                    'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>'
             ),
-            get_edit_user_link(),
-            $user_identity,
-            wp_logout_url(apply_filters('the_permalink', get_permalink(get_the_ID())))
+                get_edit_user_link(),
+                $user_identity,
+                wp_logout_url(apply_filters('the_permalink', get_permalink(get_the_ID())))
             ).
             '</p>';
     }

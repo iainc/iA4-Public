@@ -20,7 +20,7 @@
                     </div>
                 <?php endif; ?>
                 <?php if (has_nav_menu('footer')): ?>
-                  <?php if(get_theme_mod('ia4_center_footer', true)): ?>
+                  <?php if (get_theme_mod('ia4_center_footer', true)): ?>
                     <div class="centered-footer-menu">
                         <?php wp_nav_menu(array('theme_location' => 'footer', 'depth' => 1, 'menu_id' => 'footer-menu', 'menu_class' => 'footer-menu')); ?>
                     </div>

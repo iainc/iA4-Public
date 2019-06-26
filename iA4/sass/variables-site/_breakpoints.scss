@@ -1,5 +1,16 @@
 $max-width: 800px;
-$tablet: "only screen and (max-width : 992px)"; /* tablet */
-$mobile-large: "only screen and (max-width : 767px)"; /* lower than iPad Portrait */
-$mobile-medium: "only screen and (max-width : 413px)"; /* lower than iPhone 6 Plus */
-$mobile-small: "only screen and (max-width : 374px)"; /* lower iPhone 5 and smaller */
+$tablet: "only screen and (max-width : 992px)";
+
+/* tablet */
+
+$mobile-large: "only screen and (max-width : 767px)";
+
+/* lower than iPad Portrait */
+
+$mobile-medium: "only screen and (max-width : 413px)";
+
+/* lower than iPhone 6 Plus */
+
+$mobile-small: "only screen and (max-width : 374px)";
+
+/* lower iPhone 5 and smaller */

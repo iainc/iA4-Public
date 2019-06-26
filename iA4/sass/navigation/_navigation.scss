@@ -1,19 +1,19 @@
 /*--------------------------------------------------------------
 5.1 Links
 --------------------------------------------------------------*/
+
 @import "links";
 
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
-@import "menus";
 
+@import "menus";
 // main navigation menu
 header .navigation {
   float: right;
-  width:100%;
+  width: 100%;
   z-index: 9999;
-
   @media #{$mobile-large} {
     display: none;
     margin: 0;
@@ -25,29 +25,26 @@ header .navigation {
     display: block;
     float: left;
     width: 100%;
-    margin-bottom:0;
-
+    margin-bottom: 0;
     .main-menu-wrapper {
-      float:right;
+      float: right;
       position: relative;
       position: relative;
       min-height: 1em;
       text-decoration: none;
       line-height: $line-height__base;
-
       @media #{$mobile-large} {
-        margin:$line-height__small 0 0 0;
-        line-height:$line-height__small;
+        margin: $line-height__small 0 0 0;
+        line-height: $line-height__small;
       }
       @media #{$mobile-small} {
-        margin:$line-height__small--stoneage 0 0 0;
-        line-height:$line-height__small--stoneage;
+        margin: $line-height__small--stoneage 0 0 0;
+        line-height: $line-height__small--stoneage;
       }
       .menu-main-menu-container {
-        float:left;
-
-        @media #{$mobile-large}{
-          float:none;
+        float: left;
+        @media #{$mobile-large} {
+          float: none;
         }
       }
     }
@@ -56,10 +53,10 @@ header .navigation {
   .search,
   .menu {
     float: left;
-    margin-top:0;
-    margin-bottom:0;
-    margin-right:0;
-    list-style-type:none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    list-style-type: none;
   }
   .search img {
     display: none;
@@ -74,13 +71,12 @@ header .navigation {
     }
   }
   #main-menu {
-    visibility:visible;
+    visibility: visible;
   }
   .menu {
     padding-left: 0;
     margin: 0;
     list-style: none;
-
     @media #{$mobile-large} {
       margin: 0 ($line-height__small / 2) 0 0;
     }
@@ -88,24 +84,23 @@ header .navigation {
       margin: 0 ($line-height__small--stoneage / 2) 0 0;
     }
     &.search-wrapper {
-      margin:0;
-      float:left;
-      border-bottom:2px solid transparent;/*prevents from jumping after adding search line*/
+      margin: 0;
+      float: left;
+      border-bottom: 2px solid transparent;
+      /*prevents from jumping after adding search line*/
       display: block;
       position: relative;
       width: 100%;
-
       /* Close Icon aka Handcrafted with love */
       .search {
         &.current_page_item {
-          line-height:25px;
-
+          line-height: 25px;
           a {
-            border-bottom:none;
-            font-family:$font__serif;
-            line-height:26px;
-            font-size:24px;
-            font-weight:300;
+            border-bottom: none;
+            font-family: $font__serif;
+            line-height: 26px;
+            font-size: 24px;
+            font-weight: 300;
           }
         }
       }
@@ -113,7 +108,6 @@ header .navigation {
   }
   ul li {
     float: left;
-
     @media #{$mobile-small} {
       width: 100%;
       display: inline-block;
@@ -126,19 +120,16 @@ header .navigation {
       color: $color__type;
       text-decoration: none;
       padding-bottom: 0;
-
       @media #{$mobile-large} {
-        width:100%;
-        display:inline-block;
+        width: 100%;
+        display: inline-block;
         height: $line-height__small;
         margin-left: ($line-height__small / 2);
       }
-
       @media #{$mobile-small} {
         height: $line-height__small--stoneage;
         margin-left: ($line-height__small--stoneage / 2);
       }
-
       &:hover,
       &:visited {
         color: $color__type;
@@ -153,31 +144,27 @@ header .navigation {
   .menu li,
   .menu li a {
     line-height: $line-height__base;
-
     @media #{$mobile-large} {
-      line-height:$line-height__small;
-      height:inherit;
+      line-height: $line-height__small;
+      height: inherit;
     }
-
     @media #{$mobile-large} {
-      line-height:$line-height__small--stoneage;
-      height:inherit;
+      line-height: $line-height__small--stoneage;
+      height: inherit;
     }
   }
   .search-field {
-    display:inline-block;
+    display: inline-block;
     display: none;
     width: 100%;
     left: 0;
     top: 0;
-
     @media #{$mobile-large} {
-      min-width:auto;
-      display:inline;
-      min-width:inherit;
+      min-width: auto;
+      display: inline;
+      min-width: inherit;
     }
   }
-
   #searchterm {
     position: absolute;
     bottom: 0;
@@ -186,31 +173,31 @@ header .navigation {
     display: inline-block;
     height: $line-height__base;
     padding-right: $line-height__base;
-    padding-left:0;
+    padding-left: 0;
     border-radius: 0px;
-    border-bottom:2px solid $color__type;
-
+    border-bottom: 2px solid $color__type;
     @media #{$mobile-large} {
-      font-size:$font-size__small;
-      padding:($font-size__small / 2) $line-height__small ($font-size__small / 2) 0;
-      height:auto;
-      position:relative;
-      display:inline-block;
+      font-size: $font-size__small;
+      padding: ($font-size__small / 2) $line-height__small
+        ($font-size__small / 2) 0;
+      height: auto;
+      position: relative;
+      display: inline-block;
       border: none;
       font-style: normal;
       -webkit-appearance: none;
       width: 100%;
-      border-bottom:1px solid $color__type;
-      border-top:1px solid $color__type;
-      background:url('/wp-content/themes/iA4/img/icn-search.svg') no-repeat right center !important;
-      background-size:16px !important;
+      border-bottom: 1px solid $color__type;
+      border-top: 1px solid $color__type;
+      background: url("/wp-content/themes/iA4/img/icn-search.svg") no-repeat
+        right center !important;
+      background-size: 16px !important;
     }
   }
   .menu-wrapper {
     position: relative;
     float: right;
-    width:100%;
-
+    width: 100%;
     @media #{$mobile-large} {
       height: auto;
       width: 100%;
@@ -244,16 +231,16 @@ header .navigation {
     }
     .menu ul {
       width: 100%;
-      list-style:none;
+      list-style: none;
     }
     .menu li {
-      height:auto;
+      height: auto;
       float: none;
       margin: 0;
     }
     .menu a {
       border-bottom: 1px solid $color__type;
-      padding:($font-size__small / 2) 0;
+      padding: ($font-size__small / 2) 0;
       margin-left: 0px;
       display: block;
       float: none;
@@ -273,16 +260,17 @@ header .navigation {
     }
   }
 }
+
 @media #{$mobile-small} {
   .menu {
     margin-bottom: $line-height__small--stoneage;
   }
 }
+
 .navigation li a:hover,
 .navigation li.current-menu-item a {
   @include link-underline(2px);
   background-position: 0 96%;
-
   @media #{$mobile-large} {
     @include no-link-underline;
   }
@@ -292,63 +280,68 @@ header .navigation {
   position: relative;
   float: left;
 }
+
 .paging-navigation {
   float: none;
 }
+
 // standalone mobile-menu button, size manually tweaked
 .mobile-menu {
   @extend .fake-small-caps;
   @include vendor(user-select, none);
   border: 1px solid #000;
-  padding: $font-size__small__fake-small-caps $font-size__small__fake-small-caps ($font-size__small__fake-small-caps - 3px); // optically correct vertical center alignment because of font
+  padding: $font-size__small__fake-small-caps $font-size__small__fake-small-caps
+    ($font-size__small__fake-small-caps - 3px); // optically correct vertical center alignment because of font
   cursor: pointer;
   display: none;
-  border-radius:3px;
+  border-radius: 3px;
   position: absolute;
   right: 0;
   top: 0;
-  
   &--has-logo {
     top: 50%;
     transform: translateY(-50%);
   }
-  
   @media #{$mobile-large} {
     display: block;
   }
 }
+
 .searching header .navigation {
   .main-menu-wrapper {
-    width:100%;
+    width: 100%;
   }
   #main-menu {
-    visibility:hidden;
+    visibility: hidden;
   }
   .menu.search-wrapper {
     a {
-      font-style: normal
+      font-style: normal;
     }
   }
   .search-field {
     display: block;
     position: absolute;
     bottom: 0;
-
   }
 }
+
 .menu-open header.site-header {
   height: auto;
   @media #{mobile-medium} {
     margin: 0;
   }
 }
+
 .menu-open .navigation {
   display: block;
 }
+
 .menu-open .mobile-menu {
   background: #000;
   color: white;
 }
+
 form {
   .search-field {
     @include vendor(border-radius, 0 0 0 0);
@@ -357,8 +350,9 @@ form {
     @include vendor(border-radius, 0 0 0 0);
   }
 }
+
 #new-search-box {
   @media #{$mobile-large} {
-    display:none;
+    display: none;
   }
 }

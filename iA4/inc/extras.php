@@ -49,7 +49,7 @@ add_filter('body_class', 'ia4_body_classes');
 function ia4_wp_title($title, $sep)
 {
     if (is_feed()) {
-            return $title;
+        return $title;
     }
 
     global $page, $paged;

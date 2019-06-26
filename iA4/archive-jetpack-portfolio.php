@@ -8,15 +8,15 @@
 get_header(); ?>
 
 <section id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">        
-        <?php 
+    <main id="main" class="site-main" role="main">
+        <?php
         $is_page = false;
-        if(is_page()) {
+        if (is_page()) {
             $is_page = true;
             while (have_posts()) {
-                the_post(); 
-                get_template_part('template-parts/content', 'page'); 
-            }            
+                the_post();
+                get_template_part('template-parts/content', 'page');
+            }
             query_posts('post_type=jetpack-portfolio&posts_per_page=-1');
         }
         ?>
@@ -33,12 +33,12 @@ get_header(); ?>
                         </h1>
                     <?php endif; ?>
                     <ul class="work-examples tiles">
-                    <?php 
+                    <?php
                         while (have_posts()) {
                             the_post();
                             get_template_part('template-parts/content', 'portfolio-teaser');
                         }
-                        ia4_paging_nav(); 
+                        ia4_paging_nav();
                     ?>
                     </ul>
                 </section>
